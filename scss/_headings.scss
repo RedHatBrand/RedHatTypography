@@ -1,0 +1,31 @@
+%heading {
+  font-family: $font-family-headings;
+}
+
+h1, h2, h3, h4, h5, h6 { @extend %heading; }
+
+$rh-headings: 1 $font-size-level-one $font-weight-level-one $line-height-level-one $letter-spacing-level-one,
+              2 $font-size-level-two $font-weight-level-two $line-height-level-two $letter-spacing-level-two,
+              3 $font-size-level-three $font-weight-level-three $line-height-level-three $letter-spacing-level-three,
+              4 $font-size-level-four $font-weight-level-four $line-height-level-four $letter-spacing-level-four,
+              5 $font-size-level-five $font-weight-level-five $line-height-level-five $letter-spacing-level-five,
+              6 $font-size-level-six $font-weight-level-six $line-height-level-six $letter-spacing-level-six;
+
+@each $rh-heading in $rh-headings {
+  h#{nth($rh-heading, 1 )} {
+    font-size: nth($rh-heading, 2);
+    font-weight: nth($rh-heading, 3);
+    line-height: nth($rh-heading, 4);
+    letter-spacing: nth($rh-heading, 5);
+    margin-top: $line-height * 2;
+    margin-bottom: $line-height;
+    text-transform: uppercase;
+
+    & + h1, & + h2, & + h3, & + h4, & + h5, & + h6 {
+      margin-top: 0;
+    }
+  }
+}
+
+%heading:first-child  { margin-top: 0; }
+%heading:last-child   { margin-bottom: 0; }

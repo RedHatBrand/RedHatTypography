@@ -1,0 +1,39 @@
+$font-family-body:            'Overpass', sans-serif;
+$font-family-headings:        'Overpass', sans-serif;
+$font-family-mono:            'Dejavu Mono', monospace;
+
+$font-weight:                 300;
+$font-size:                   100%;
+$line-height:                 1.5rem;
+
+$font-size-level-one:         3em;
+$font-size-level-two:         2em;
+$font-size-level-three:       1em;
+$font-size-level-four:        0.8em;
+$font-size-level-five:        0.667em;
+$font-size-level-six:         0.5em;
+
+$font-weight-level-one:       700;
+$font-weight-level-two:       300;
+$font-weight-level-three:     700;
+$font-weight-level-four:      700;
+$font-weight-level-five:      700;
+$font-weight-level-six:       700;
+
+$line-height-level-one:       $line-height * 2;
+$line-height-level-two:       $line-height * 1.5;
+$line-height-level-three:     $line-height;
+$line-height-level-four:      $line-height;
+$line-height-level-five:      $line-height;
+$line-height-level-six:       $line-height;
+
+$letter-spacing-level-one:    0.025em;
+$letter-spacing-level-two:    0.05em;
+$letter-spacing-level-three:  normal;
+$letter-spacing-level-four:   normal;
+$letter-spacing-level-five:   normal;
+$letter-spacing-level-six:    normal;
+
+$rh-color-mark:           yellow !default;
+$rh-color-insert:         lightgreen !default;
+$rh-color-delete:         lightcoral !default;

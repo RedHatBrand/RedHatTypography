@@ -1,0 +1,41 @@
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  margin: 0 0 $line-height;
+  border: thin solid;
+
+  caption, th, td {
+    vertical-align: top;
+    padding: $line-height / 2;
+  }
+
+  caption {
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+
+  th {
+    font-weight: 700;
+  }
+
+  thead tr {
+    background-color: whitesmoke;
+  }
+
+  tbody tr {
+    border-top: thin solid;
+
+    th {
+      font-weight: 700;
+    }
+  }
+
+  tfoot {
+    color: lightgrey;
+    tr {
+      border-top: thin solid;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+blockquote {
+  font-size: 1.5em;
+  line-height: $line-height * 1.5;
+  font-weight: 300;
+  font-style: italic;
+
+  &:before { content: '\0022'; }
+  &:after { content: '\0022'; }
+}
+
+blockquote + cite {
+  display: block;
+  margin-top: $line-height / 2;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+
+  small {
+    font-weight: 300;
+  }
+}

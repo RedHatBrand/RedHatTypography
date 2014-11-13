@@ -1,0 +1,56 @@
+em,
+cite,
+i { font-style: italic; }
+
+b,
+strong { font-weight: 700; }
+
+small { font-size: 0.8em; }
+
+s { font-style: strike-through; }
+
+u { text-decoration: underline; }
+
+q {
+  &:before { content: '\0022'; }
+  &:after { content: '\0022'; }
+}
+
+dfn {}
+
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+
+time {}
+
+sub {
+  font-size: 0.8em;
+  position: relative;
+  bottom: - $line-height / 6;
+}
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: - $line-height / 4;
+}
+
+mark {
+  background-color: $rh-color-mark;
+}
+ins {
+  background-color: $rh-color-insert;
+  text-decoration: none;
+}
+del {
+  background-color: $rh-color-delete;
+}
+
+mark, ins, del {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-top: 0.25em;
+  padding-bottom: 0.05em;
+}
+

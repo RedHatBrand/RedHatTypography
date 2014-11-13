@@ -1,0 +1,11 @@
+pre,
+code,
+var,
+samp,
+kbd { font-family: $font-family-mono; }
+
+pre {
+  padding: $line-height / 2;
+  color: white;
+  background-color: dimgrey;
+}

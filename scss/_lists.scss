@@ -1,0 +1,68 @@
+ul, ol {
+  padding: 0;
+}
+
+menu {
+  list-style: none;
+}
+
+ol, ul {
+  li {
+    list-style: none;
+    display: block;
+    position: relative;
+    padding-left: 1.5em;
+
+    &:before {
+      position: absolute;
+      left:0;
+      line-height: $line-height;
+      top: -0.08em;
+      width: 1em;
+      font-weight: bold;
+    }
+  }
+
+  ol {
+    li:before {
+      top: 0;
+    }
+  }
+
+  li + li { margin-top: $line-height / 2; }
+}
+
+ul li:before { content: "\2022"; }
+ul ul li:before { content: '\2013' }
+ul ul ul li:before { content: '\00B7' }
+
+ol {
+  list-style: decimal;
+  counter-reset: toplevel;
+
+  li:before {
+    content: counter(toplevel) ". ";
+    counter-increment: toplevel;
+  }
+  
+  ol { counter-reset: secondlevel; }
+
+  ol li:before {
+    font-weight: normal;
+    content: counter(secondlevel) ". ";
+    counter-increment: secondlevel;
+  }
+
+  ol ol { counter-reset: thirdlevel; }
+
+  ol ol li:before {
+    content: counter(thirdlevel) ". ";
+    counter-increment: thirdlevel;
+  }
+}
+
+dl {
+  dt {
+    font-weight: 700;
+  }
+}
