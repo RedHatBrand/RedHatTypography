@@ -1,6 +1,6 @@
 {
   "name": "red-hat-brand-typography",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Red Hat Brand Base Typographic Styles",
   "main": "css/red-hat-typography.css",
   "dependencies": {
